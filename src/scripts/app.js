@@ -2,6 +2,9 @@
 
 const throttle = require('lodash.throttle');
 
+// Get the CSS in here
+require('../styles/app.less');
+
 // DOM elements used
 const TAB_NAME_ID = '#tabName';
 const TAB_ICON_ID = '#tabIcon';
