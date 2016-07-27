@@ -18,6 +18,7 @@ var config = {
 
   resolve: {
     root: [SRC, NODE_MODULES],
+    modulesDirectories : [NODE_MODULES],
     alias: {}
   },
 

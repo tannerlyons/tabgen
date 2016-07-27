@@ -5,14 +5,33 @@
 
 
 @import 'reset.less';
+@import '~less-grid-system/src/grid.less';
 
 
 body {
   background-color: @backgroundColor;
-  color: red;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h1 {
   background-color: @darkerColor;
+  text-align: center;
+  font-size: 4em;
+  padding: 8px 0;
+}
+
+header, section {
+  padding: 4px 0;
+  display: block;
+  clear: both;
   border-bottom: 1px solid @borderColor;
+  overflow: hidden;
+}
+
+.images {
+  text-align: center;
+  img {
+    margin: 0 4px;
+  }
+
 }

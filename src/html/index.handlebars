@@ -5,14 +5,31 @@
     <link id="favicon" href="" rel="icon"/>
     <link href="{{ htmlWebpackPlugin.options.css }}" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
-    <h1>Tab Generator</h1>
-    <div>
-      <input type="text" id="tabName"/>
-      <input type="text" id="tabIcon"/>
-    </div>
+    <header>
+      <h1>Tab Generator</h1>
+    </header>
+    <section>
+      <div class="images">
+        <img src="http://placehold.it/250x150" alt="" />
+        <img src="http://placehold.it/250x150" alt="" />
+        <img src="http://placehold.it/250x150" alt="" />
+      </div>
+    </section>
+    <section>
+      <column>
+        <label for="tabName">Enter the name of your tab:</label>
+        <input type="text" id="tabName"/>
+      </column>
+      <column>
+        <label for="tabIcon">Enter the URL of your icon, or the site to pull an icon from:</label>
+        <input type="text" id="tabIcon"/>
+      </column>
+      </div>
+    </section>
 
     <script type="text/javascript" src="{{ htmlWebpackPlugin.files.js }}"></script>
   </body>
