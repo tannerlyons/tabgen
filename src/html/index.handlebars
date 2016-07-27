@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    <link id="favicon" href="" rel="icon"/>
+    <link href="{{ htmlWebpackPlugin.options.css }}" rel="stylesheet">
+  </head>
+  <body>
+
+    <h1>Tab Generator</h1>
+    <div>
+      <input type="text" id="tabName"/>
+      <input type="text" id="tabIcon"/>
+    </div>
+
+    <script type="text/javascript" src="{{ htmlWebpackPlugin.files.js }}"></script>
+  </body>
+</html>

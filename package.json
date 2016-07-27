@@ -1,0 +1,48 @@
+{
+  "name": "tabgen",
+  "version": "0.0.1",
+  "description": "Simple client-only tool to quickly spoof a background tab in your browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base dist --inline",
+    "build": "NODE_ENV=production webpack --optimize-minimize"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tannermeans/tabgen.git"
+  },
+  "keywords": [
+    "tab",
+    "spoof",
+    "generate"
+  ],
+  "author": "tanner.means@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tannermeans/tabgen/issues"
+  },
+  "homepage": "https://github.com/tannermeans/tabgen#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "handlebars": "^4.0.5",
+    "handlebars-loader": "^1.3.0",
+    "html-webpack-plugin": "^2.22.0",
+    "jshint": "^2.9.2",
+    "jshint-loader": "^0.8.3",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.0"
+  }
+}
