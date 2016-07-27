@@ -35,7 +35,7 @@ var config = {
       },
       {
         test: /\.less$/,
-        loaders: ['style','css','less?strictMath']
+        loader: ExtractTextPlugin.extract('css?sourceMap!less?sourceMap')
       }
     ]
   },
@@ -46,7 +46,8 @@ var config = {
       inject : false,
       hash : true,
       template : './src/html/index.handlebars',
-    })
+    }),
+    new ExtractTextPlugin('styles.css')
   ],
 
   preLoaders: [

@@ -2,7 +2,7 @@
 
 const throttle = require('lodash.throttle');
 
-// Get the CSS in here
+// Ensure our CSS is loaded.
 require('../styles/app.less');
 
 // DOM elements used
