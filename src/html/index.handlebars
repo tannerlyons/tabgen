@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>{{ htmlWebpackPlugin.options.title }}</title>
-    <link id="favicon" href="" rel="icon"/>
+    <link id="favicon" href="src/img/icon.png" rel="icon"/>
     <link href="{{ htmlWebpackPlugin.options.css }}" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
@@ -27,18 +27,22 @@
           <input type="text" id="tabIcon"/>
         </div>
         <div class="column">
-          <img src="src/img/arrow.png" alt="" />
+          <img src="src/img/arrow.png" class="arrow" alt="arrow" />
         </div>
         <div class="column">
           <p>Custom tab generated:</p>
-          <img src="src/img/gmail_illuminati_nasa.png" alt="" />
+          <img src="src/img/gmail_illuminati_nasa.png" alt="custom tabs" />
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="ticker">
       <div class="row">
-        This is where the emote ticker goes
+        <p>
+          <span id="verb">Impress</span>
+          your
+          <span id="noun">friends.</span>
+        </p>
       </div>
     </section>
 

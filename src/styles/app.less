@@ -55,7 +55,13 @@ section {
   input {
     width: 198px;
     margin-top: 8px;
+    margin-bottom: 16px;
   }
+}
+
+.row {
+  .flexContainer();
+  .justify();
 }
 
 .instructions {
@@ -72,13 +78,37 @@ section {
   }
 
   p {
+    margin-top: 14px;
     margin-bottom: 10px;
   }
 }
 
-.row {
-  .flexContainer();
-  .justify();
+.ticker {
+  font-size: 1.4em;
+  div {
+    text-align: center;
+    p {
+      width: 100%;
+    }
+  }
+
+  span {
+    position: relative;
+    width: 280px;
+    float: left;
+  }
+
+  #verb {
+    left: 92px;
+    text-align: right;
+    float: left;
+  }
+
+  #noun {
+    right: 92px;
+    text-align: left;
+    float: right;
+  }
 }
 
 .reviews {
@@ -119,7 +149,12 @@ section {
       text-align: justify;
     }
   }
+}
 
+img.arrow {
+  height: 20px;
+  margin-top: 50px;
+  width: 60px;
 }
 
 .footer {
