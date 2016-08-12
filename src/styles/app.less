@@ -5,8 +5,19 @@
 
 
 @import 'reset.less';
-@import '~less-grid-system/src/grid.less';
 
+.flexContainer(@dir: row) {
+  display: flex;
+  flex-direction: @dir;
+}
+
+.justify(@dir: space-between) {
+  justify-content: @dir;
+}
+
+.flexGrow(@n: 1) {
+  flex-grow: @n;
+}
 
 body {
   background-color: @backgroundColor;
@@ -14,24 +25,103 @@ body {
 }
 
 h1 {
-  background-color: @darkerColor;
   text-align: center;
   font-size: 4em;
-  padding: 8px 0;
+}
+
+header {
+  background-color: @darkerColor;
 }
 
 header, section {
-  padding: 4px 0;
+  padding: 10px 0;
   display: block;
   clear: both;
   border-bottom: 1px solid @borderColor;
   overflow: hidden;
 }
 
-.images {
-  text-align: center;
+section {
+  width: 100%;
+  > div {
+    margin: 0px auto;
+    max-width: 800px;
+  }
+}
+
+.column {
+  .flexGrow(1);
+
+  input {
+    width: 198px;
+    margin-top: 8px;
+  }
+}
+
+.instructions {
   img {
-    margin: 0 4px;
+    width: 100%;
   }
 
+  .column {
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.row {
+  .flexContainer();
+  .justify();
+}
+
+.reviews {
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 18px;
+
+    sup {
+      font-size: .5em;
+    }
+  }
+
+  .thoughts > div {
+    background-color: @darkerColor;
+    margin-bottom: 12px;
+    overflow: hidden;
+
+    img {
+      float: left;
+    }
+
+    img {
+      width: 80px;
+      margin-top: -20px;
+
+      // Since our robots face the wrong way...
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+    }
+
+    p {
+      padding: 12px 12px 12px 24px;
+      text-align: justify;
+    }
+  }
+
+}
+
+.footer {
+  font-size: .8em;
 }

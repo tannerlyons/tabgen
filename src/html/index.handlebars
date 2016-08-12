@@ -12,24 +12,78 @@
     <header>
       <h1>Tab Generator</h1>
     </header>
-    <section>
-      <div class="images">
-        <img src="http://placehold.it/250x150" alt="" />
-        <img src="http://placehold.it/250x150" alt="" />
-        <img src="http://placehold.it/250x150" alt="" />
+
+    <section class="instructions">
+      <div class="row">
+        <div class="column">
+          <label for="tabName">Enter the name for the tab:</label>
+          <br/>
+          <input type="text" id="tabName"/>
+          <br/>
+          <label for="tabIcon">
+            Enter the URL of the icon: <!-- TODO, or the site to pull an icon from:-->
+          </label>
+          <br/>
+          <input type="text" id="tabIcon"/>
+        </div>
+        <div class="column">
+          <img src="src/img/arrow.png" alt="" />
+        </div>
+        <div class="column">
+          <p>Custom tab generated:</p>
+          <img src="src/img/gmail_illuminati_nasa.png" alt="" />
+        </div>
       </div>
     </section>
+
     <section>
-      <column>
-        <label for="tabName">Enter the name of your tab:</label>
-        <input type="text" id="tabName"/>
-      </column>
-      <column>
-        <label for="tabIcon">Enter the URL of your icon, or the site to pull an icon from:</label>
-        <input type="text" id="tabIcon"/>
-      </column>
+      <div class="row">
+        This is where the emote ticker goes
       </div>
     </section>
+
+    <section class="reviews">
+      <div class="column">
+        <h2>Reviews<sup>*</sup></h2>
+
+        <div class="thoughts">
+          <div>
+            <img src="https://robohash.org/milleniumman3" />
+            <p>Got promoted after my boss thought I was researching 6-sigma! Thanks TabGen!</p>
+          </div>
+          <div>
+            <img src="https://robohash.org/irongiant" />
+            <p>Used TabGen to write out a marriage p
+              roposal, needless to say, he didn't say yes. 10/10 would propose with again.</p></div>
+          <div>
+            <img src="https://robohash.org/bender2" />
+            <p>Filler text and then some</p>
+          </div>
+          <div>
+            <img src="https://robohash.org/android" />
+            <p>Filler text and then some</p>
+          </div>
+          <div>
+            <img src="https://robohash.org/dalek4" />
+            <p>Filler text and then some</p>
+          </div>
+          <div>
+            <img src="https://robohash.org/cylon" />
+            <p>Filler text and then some</p>
+          </div>
+          <div>
+            <img src="https://robohash.org/terminator" />
+            <p>Filler text and then some</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="column">
+        <p>* Actual things people could say about TabGen!</p>
+      </div>
+     </section>
 
     <script type="text/javascript" src="{{ htmlWebpackPlugin.files.js }}"></script>
   </body>

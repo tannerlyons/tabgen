@@ -37,6 +37,11 @@ var config = {
       {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract('css?sourceMap!less?sourceMap')
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url?limit=25000',
+        include: './src/img'
       }
     ]
   },
@@ -46,7 +51,7 @@ var config = {
       title : 'Tab Gen, Cool++',
       inject : false,
       hash : true,
-      template : './src/html/index.handlebars',
+      template : './src/html/index.handlebars'
     }),
     new ExtractTextPlugin('styles.css')
   ],
