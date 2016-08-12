@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline",
-    "build": "NODE_ENV=production webpack --optimize-minimize"
+    "build": "NODE_ENV=production webpack --optimize-minimize",
+    "surgePush": "surge -p dist -d tabgen.surge.sh",
+    "deploy": "npm run build; npm run surgePush",
+    "teardown": "surge teardown tabgen.surge.sh"
   },
   "repository": {
     "type": "git",
