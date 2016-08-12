@@ -45,6 +45,7 @@ function scrollThrough( domId, words ) {
     element.innerHTML = words[currentIdx];
     currentIdx++;
     if (currentIdx === words.length) {
+      shuffle(words);
       currentIdx = 0;
     }
   };
