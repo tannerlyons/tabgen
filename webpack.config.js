@@ -5,6 +5,7 @@ var SRC = path.join(__dirname, 'src/');
 var NODE_MODULES = path.join(__dirname, 'node_modules/');
 
 var PROD_MODE = process.env.NODE_ENV === 'production';
+console.log('PROD_MODE', PROD_MODE);
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -50,6 +51,10 @@ var config = {
       title : 'Tab Gen, Cool++',
       inject : false,
       hash : true,
+      minify: PROD_MODE && {
+        removeComments : true,
+        collapseWhitespace : true,
+      },
       template : './src/html/index.handlebars'
     }),
     new ExtractTextPlugin('styles.css')
