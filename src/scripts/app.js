@@ -32,9 +32,10 @@ const verbs = ['Impress', 'Astound', 'Scare', 'Worry', 'Make fun of',
   'Insult', 'Compete with', 'Disgust', 'Prank', 'Misdirect', 'Confuse', 'Wow'];
 shuffle(verbs);
 
-const nouns = ['friends', 'loved ones', 'coworkers', 'boss', 'relatives', 'blind-dates',
-  'tinder matches', 'IT department', 'book club', 'dog', 'wife', 'husband', 'partner',
-  'future self'].map(term=>term +'.');
+const nouns = ['friends', 'loved ones', 'coworkers', 'boss', 'IT department', 'blind-dates',
+  'tinder matches', 'relatives', 'classmates', 'book club', 'dog', 'wife', 'husband',
+  'partner', 'future self']
+  .map(term=>term +'.');
 shuffle(nouns);
 
 // Update the verb and noun every once in a while;

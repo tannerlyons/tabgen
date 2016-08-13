@@ -86,11 +86,19 @@ section {
 
 .ticker {
   font-size: 1.4em;
-  div {
-    text-align: center;
-    p {
-      width: 100%;
-    }
+
+  .offset {
+    position: absolute;
+    top: 0;
+    width: 300px;
+  }
+
+  .anchor {
+    position: absolute;
+    left: 50%;
+    width: 42px;
+    transform: translate(-50%,0);
+    padding: 0 7px;
   }
 
   span {
@@ -100,15 +108,12 @@ section {
   }
 
   #verb {
-    left: 92px;
+    right: 100%;
     text-align: right;
-    float: left;
   }
 
   #noun {
-    right: 92px;
-    text-align: left;
-    float: right;
+    left: 100%;
   }
 }
 
