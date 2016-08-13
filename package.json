@@ -1,8 +1,7 @@
 {
   "name": "tabgen",
-  "version": "0.0.1",
-  "description": "Simple client-only tool to quickly spoof a background tab in your browser",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Simple client-only tool to quickly spoof a tab in your browser",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline",
