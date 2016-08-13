@@ -40,8 +40,7 @@ var config = {
       },
       {
         test: /\.(jpg|png)$/,
-        loader: 'url?limit=25000',
-        include: './src/img'
+        loaders: ['file?name=img/[name].[ext]']
       }
     ]
   },

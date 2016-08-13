@@ -6,6 +6,9 @@ const shuffle = require('shuffle-array');
 // Ensure our CSS is loaded.
 require('../styles/app.less');
 
+// Ensure our images are loaded.
+require('../img/images.js');
+
 // DOM elements used
 const TAB_NAME_ID = '#tabName';
 const TAB_ICON_ID = '#tabIcon';
